@@ -1,0 +1,29 @@
+.container {
+  display: grid;
+  margin: 20px;
+  /* auto can’t win a fight against fr units */
+  /* auto -> all they do is share equal space. But when we drop a fractional unit in the middle as the second column,
+   the auto columns are only as wide as the content inside them and the 1fr column takes up the remaining space. */
+  grid-template-columns: auto auto auto;
+  gap: 10px;
+}
+
+/* take from tailwind color */
+.el1 {
+  background-color: #eab308;
+}
+.el2 {
+  background-color: #a3e635;
+}
+.el3 {
+  background-color: #0284c7;
+}
+.el4 {
+  background-color: #be123c;
+}
+.el5 {
+  background-color: #a855f7;
+}
+.el6 {
+  background-color: #0f766e;
+}
